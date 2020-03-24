@@ -2,22 +2,52 @@
 <html>
 <head>
   <title> Login </title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+.center{
+	margin: auto;
+	border: 10px solid blue;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+.boxed{
+	border: 5px solid green;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 20px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column;
+	flex-wrap : wrap;
+	padding: 20px
+
+}
+body{
+	background-image: url(iu.jpg);
+	background-repeat: repeat-x;
+}
+</style>
 </head>
 <body>
 
   <div class="loginLayout" >
     
-     <h1 class="judul" > Login Here </h1>
+     <h1 class="center" > Login Here </h1>
 
+	<div class="boxed">
+	<div>
      <label for="username" > Username </label>
-     <input type="text" name="username" id="username" > <br><br>
-
+     <input type="text" name="username" id="username" placeholder="username" > <br><br>
+	</div>
+	<div>
       <label for="password" > Password </label>
      <input type="password" name="Password" id="Password" > <br><br>
-
+	</div>
+	<div>
      <button type="submit" > Login </button>
-
+	 </div>
+	</div>
   </div>
 
 </body>
